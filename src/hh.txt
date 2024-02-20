@@ -1,0 +1,14 @@
+<nav>
+            <ul>
+              <li><Link to ="/entertainment">entertainment</Link></li>
+                <Routes>
+            <Route path="/entertainment" element={<Entertainment />}/>
+          </Routes>
+<div className="text-wrapper">GENERAL</div>
+          https://newsapi.org/v2/top-headlines?country=in&apiKey=f39b6c8b8f074a929b85b1469cffea2f
+        
+            </ul>
+          </nav>
+
+
+          <Link className="text-wrapper" to ="/General">GENERAL</Link>
