@@ -2,7 +2,8 @@ import React from 'react'
 import './index.css'
 import{ useState, useEffect } from 'react';
 import axios from 'axios';
-
+import Aos from 'aos'; 
+import "aos/dist/aos.css";
 const Business = () => {
   const [category, setCategory] = useState('general');
   const [headlines, setHeadlines] = useState([]);
@@ -18,8 +19,14 @@ const Business = () => {
           },
         });
         setHeadlines(response.data.articles);
+        initializeAOS();
       } catch (error) {
         console.error('Error fetching headlines:', error);
+      }
+    };
+    const initializeAOS = () => {
+      if (window.Aos) {
+        window.Aos.init(); // Initialize AOS if available
       }
     };
 
@@ -27,9 +34,10 @@ const Business = () => {
   }, [category]);
   
   return (
-  <div>
+  <div className='Business'>
    <h1>Business News</h1>
-    <div className="card-container">
+   
+    <div className="card-container"data-aos="zoom-in-up"data-aos-duration="3000" >
       {headlines.map((headline, index) => (
         <div className="card" key={index}>
           <img src={headline.urlToImage} alt={headline.title} />

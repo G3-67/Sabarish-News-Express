@@ -329,4 +329,9 @@
   .card-content a:hover {
     text-decoration: underline;
   }
-  
+  .heading{
+    margin-top: 120px;
+  }
+  .Business{
+    margin-top: 120px;
+  }
