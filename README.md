@@ -11,7 +11,9 @@ We have created this project by using React on the frontend and we'll make get r
 
 ## **Install this dependencies**
 npm install axios
+
 npm install react-router-dom
+
 npm install aos --save
 ## **video** 📦 
 
