@@ -10,7 +10,7 @@ import Technology from './Technology'
 import Intertainment from './Intertainment'
 import {Link,Routes,Route} from 'react-router-dom';
 import Header from './Header';
-import footer from './footer';
+
 
 function App() {
     
@@ -27,7 +27,7 @@ function App() {
       <div><Link className="text-wrapper-4" to="/Science">SCIENCE</Link></div>
       <div><Link className="text-wrapper-5" to="/Sports">SPORTS</Link></div>
       <div><Link className="text-wrapper-6" to ="/Technology">TECHNOLOGY</Link></div>
-      <footer />
+      
     </div>
     
     

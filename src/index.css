@@ -325,6 +325,14 @@
     text-decoration: none;
     color: #007bff;
   }
+  footer {
+    text-align: center;
+    
+    background-color: #eb2a0c;
+    color: #000;
+    width: 1500px;
+    margin-top: 600px;
+  }
   
   .card-content a:hover {
     text-decoration: underline;
